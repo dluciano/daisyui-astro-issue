@@ -1,0 +1,6 @@
+@import "tailwindcss/theme";
+
+.someclass {
+    @apply bg-red-500 text-lg; /* WORKS */
+   @apply bg-base-100; /* FAILS */
+}
