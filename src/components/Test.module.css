@@ -1,6 +1,6 @@
 @import "tailwindcss/theme";
+@plugin "daisyui";
 
 .someclass {
-    @apply bg-red-500 text-lg; /* WORKS */
-    @apply bg-base-100; /* FAILS */
+    @apply bg-red-500 text-lg bg-base-100; /* WORKS */
 }

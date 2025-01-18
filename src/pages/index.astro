@@ -9,11 +9,10 @@ import Test from '../components/Test.tsx';
 </Layout>
 
 
-<style is:global>
+<style>
 @import "tailwindcss/theme";
-
+@plugin "daisyui";
 .anotherclass{
-	@apply bg-red-500 text-lg mt-12; /* WORKS */
-   /* @apply bg-base-100;  FAILS */
+	@apply bg-base-100 bg-red-500 text-lg mt-12;
 }
 </style>
