@@ -5,4 +5,15 @@ import Test from '../components/Test.tsx';
 
 <Layout>
 	<Test client:only="solidjs" />
+	<div class="anotherclass">Test 2</div>
 </Layout>
+
+
+<style is:global>
+@import "tailwindcss/theme";
+
+.anotherclass{
+	@apply bg-red-500 text-lg mt-12; /* WORKS */
+   /* @apply bg-base-100;  FAILS */
+}
+</style>
